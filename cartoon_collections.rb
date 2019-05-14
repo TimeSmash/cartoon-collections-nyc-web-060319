@@ -2,8 +2,10 @@ def roll_call_dwarves(name_array)
   name_array.each { |name| puts name }
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls)
+  calls.collect do |call|
+    call = "#{call}!"
+  end
 end
 
 def long_planeteer_calls# code an argument here
