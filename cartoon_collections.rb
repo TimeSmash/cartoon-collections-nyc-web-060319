@@ -1,11 +1,10 @@
 def roll_call_dwarves(name_array)
-  name_array.each { |name| puts name }
+  name_array.each_with_index { |name, ind| puts "#{ind}." name }
 end
 
 def summon_captain_planet(calls)
   calls.collect do |call|
-    # call = "#{call[0].upcase}#{call[1..call.length-1]}!"
-    call = "#{call[0].upcase.join("")}!"#{call[1..call.length-1]}!"
+    call = "#{call[0].upcase}#{call[1..call.length-1]}!"
     # call << "!"
   end
 end
