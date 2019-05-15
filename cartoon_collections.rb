@@ -4,8 +4,8 @@ end
 
 def summon_captain_planet(calls)
   calls.collect do |call|
-    # alternate way --> call = "#{call}!"
-    call << "!"
+    call = "#{call.upcase}!"
+    # call << "!"
   end
 end
 
