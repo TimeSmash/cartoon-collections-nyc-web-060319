@@ -4,7 +4,7 @@ end
 
 def summon_captain_planet(calls)
   calls.collect do |call|
-    "#{call.upcase}!"
+    "#{call[0].upcase}!"
   end
 end
 
